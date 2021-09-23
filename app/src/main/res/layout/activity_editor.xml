@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.godfrey.codingexercise.component.CanvasDrawView
+        android:id="@+id/Editor_CanvasView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/EditorActivity_BottomBar"
+        tools:ignore="MissingConstraints">
+    </com.godfrey.codingexercise.component.CanvasDrawView>
+
+    <LinearLayout
+        android:id="@+id/EditorActivity_BottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#444"
+    >
+        <Button
+            android:id="@+id/EditorActivity_SquareBtn"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="didPressGenerateShapeButton"
+            android:tag="0"
+            android:text="@string/btn_square"
+        />
+
+
+        <Button
+            android:id="@+id/EditorActivity_CircleBtn"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="didPressGenerateShapeButton"
+            android:tag="1"
+            android:text="@string/btn_circle"
+        />
+
+        <Button
+            android:id="@+id/EditorActivity_TriangleBtn"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="didPressGenerateShapeButton"
+            android:tag="2"
+            android:text="@string/btn_triangle"
+        />
+
+        <Button
+            android:id="@+id/EditorActivity_UndoBtn"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="didPressUndoButton"
+            android:text="@string/btn_undo"
+        />
+
+        <Button
+            android:id="@+id/EditorActivity_StatBtn"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/btn_stat"
+            android:onClick="didPressStatButton"
+            />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

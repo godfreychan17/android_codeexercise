@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CodingExercise</string>
+    <string name="btn_square">Square</string>
+    <string name="btn_triangle">Tri</string>
+    <string name="btn_circle">Circle</string>
+    <string name="btn_undo">Undo</string>
+    <string name="btn_stat">Stat</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_clear">Clear</string>
+    <string name="btn_progress">In Progress</string>
+    <string name="state_title_square">Num of Square : </string>
+    <string name="state_title_triangle">Num of Triangle : </string>
+    <string name="state_title_circle">Num of Circle : </string>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <Button
+        android:id="@+id/Stat_BackBtn"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="didPressBackBtn"
+        android:text="@string/btn_back"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Stat_BackBtn"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+    >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/StatActivity_squareTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Num of square"
+                android:layout_centerVertical="true"
+                />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:text="@string/btn_clear"
+                android:onClick="didPressClearAllBtn"
+                android:tag="0"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+
+                android:id="@+id/StatActivity_circleTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Num of cricle"
+                android:layout_centerVertical="true"
+                />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:text="@string/btn_clear"
+                android:onClick="didPressClearAllBtn"
+                android:tag="1"
+            />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/StatActivity_triangleTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Num of triangle"
+                android:layout_centerVertical="true"
+                />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:text="@string/btn_clear"
+                android:onClick="didPressClearAllBtn"
+                android:tag="2"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
